@@ -641,7 +641,7 @@ header .navbar-brand {
   font-weight: 400;
 }
 
-form {
+.form {
   padding: 2em;
 }
 
@@ -699,7 +699,7 @@ form {
     padding: 0.4em 5em;
   }
 
-  form {
+  .form {
     padding: 1.5em;
   }
 
@@ -729,7 +729,7 @@ form {
     padding: 0.2em 1em;
     font-size: 0.6em;
   }
-  form {
+  .form {
     padding: 1em !important;
   }
 
