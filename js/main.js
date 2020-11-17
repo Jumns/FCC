@@ -6,7 +6,7 @@ $(".owl-carousel").owlCarousel({
   freeDrag: true,
   merge: true,
   autoplay: true,
-  autoplayTimeout: 3000,
+  autoplayTimeout: 5000,
   animateOut: "slideOutDown",
   lazyload: true,
   autoplayHoverPause: true,
@@ -36,6 +36,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   AOS.init({
     duration: 800,
+    offset: 100,
     once: true,
     easing: "ease-in-out",
   });

@@ -37,6 +37,11 @@ a:hover {
   text-decoration: none !important;
 }
 
+.give-btn:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
 h1,
 h2,
 h3,
@@ -218,8 +223,9 @@ CAROUSEL
 =========================== */
 
 .item {
-  height: 400px;
-  width: auto;
+  /* height: 400px; */
+  /* width: auto; */
+  padding: 2em 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,6 +233,32 @@ CAROUSEL
   background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575))
     no-repeat;
   background-size: cover;
+}
+
+.item img {
+  max-width: 70px;
+  height: 70px;
+  border: 2px dashed #cfcc33;
+  border-radius: 50%;
+}
+
+.test-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+  border-right: 3px solid #cfcd33;
+}
+
+.item p {
+  font-size: 1.1em;
+  line-height: 2;
+  color: #ccc;
+}
+
+.item small {
+  color: grey;
 }
 
 .test-bg {
@@ -689,6 +721,12 @@ header .navbar-brand {
   .card-wrap {
     /* margin-bottom: 1.5em; */
     padding-bottom: 0;
+  }
+
+  .test-info {
+    border-bottom: 2px solid #cfcd33;
+    border-right: none;
+    padding-bottom: 1.5em;
   }
 }
 
