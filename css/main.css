@@ -18,7 +18,7 @@ body {
 }
 
 html {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -180,22 +180,31 @@ p {
 
 .team .member .member-info {
   position: absolute;
-  bottom: -80px;
+  bottom: -60px;
   left: 0px;
   right: 0px;
   background: rgba(255, 255, 255, 0.9);
-  padding: 15px 0;
+  padding: 5px 0;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.team .member h4 {
-  font-weight: 700;
+.team .member .member-info p {
+  margin: 0;
+}
+
+.gal-pic {
+  /* border: 1px solid #cfcd33; */
+  padding: 0.5em;
+  /* min-height: 320px; */
+}
+
+.team .gal-caption {
+  font-weight: 500;
   margin-bottom: 10px;
   font-size: 16px;
   color: #8f4405;
   position: relative;
-  padding-bottom: 10px;
 }
 
 .team .member .social {
@@ -214,7 +223,7 @@ p {
 
 /* 
 ===== =====================
-end of team 
+end of admin 
 ===========================
 */
 
@@ -325,6 +334,10 @@ backgrounds
 
 .bg-five {
   background-color: #f9c37a !important;
+}
+
+.bg-black {
+  background-color: #000 !important;
 }
 
 .text-one {
@@ -670,7 +683,8 @@ ul li .active {
 header .navbar-brand {
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .form {
@@ -818,6 +832,11 @@ header .navbar-brand {
 @media screen and (max-width: 320px) {
   .privacy {
     font-size: 0.8em;
+  }
+
+  .navbar-brand > img {
+    max-width: 150px;
+    height: auto;
   }
 
   .give-btn {
