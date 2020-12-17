@@ -7,7 +7,7 @@
 }
 
 ::selection {
-  color: #cfcd33;
+  color: #fff;
   background-color: #8f4405;
 }
 body {
@@ -18,7 +18,8 @@ body {
 }
 
 html {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
+  overflow-y: auto;
   scroll-behavior: smooth;
 }
 
@@ -467,10 +468,7 @@ ul li .active {
 
 /* Give section */
 .give-text {
-  position: absolute;
-  left: 100px;
-  top: 100px;
-  color: white;
+  font-size: 1rem;
 }
 
 .give-card {
@@ -687,11 +685,34 @@ header .navbar-brand {
   font-size: 13px;
 }
 
+header .navbar-toggler {
+  padding: 0;
+  margin: 0;
+}
+header .navbar-toggler:focus {
+  outline: none;
+  border: none;
+}
+
 .form {
   padding: 2em;
 }
 
 /* media query */
+@media screen and (min-width: 520px) {
+  header > nav {
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header > nav {
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+  }
+}
+
 /* Normal desktop :1200px. */
 
 @media screen and (max-width: 1200px) {
@@ -714,6 +735,10 @@ header .navbar-brand {
   ul li .active {
     color: #4c281a !important;
     border: none;
+  }
+
+  .top-space {
+    margin-top: 2em;
   }
 
   .give-btn {
@@ -745,6 +770,21 @@ header .navbar-brand {
 }
 
 @media screen and (max-width: 768px) {
+  .banner {
+    height: 70vh;
+  }
+
+  .connect-bg {
+    background-position: center;
+  }
+
+  .nav-link {
+    font-size: 1em;
+  }
+
+  .give > .banner {
+    height: 80vh;
+  }
   .give-btn {
     top: 170px;
     right: 100px;
@@ -803,10 +843,6 @@ header .navbar-brand {
     margin: auto;
   }
 
-  footer .top-space {
-    margin-top: 1.5em !important;
-  }
-
   .card-wrap span {
     transform: rotate(47deg);
     top: 35px;
@@ -826,17 +862,17 @@ header .navbar-brand {
     padding: 0.1em 0.5em;
     font-size: 0.6em;
   }
+
+  .navbar-brand > img {
+    max-width: 150px;
+    height: auto;
+  }
 }
 
 /* small mobile :320px. */
 @media screen and (max-width: 320px) {
   .privacy {
     font-size: 0.8em;
-  }
-
-  .navbar-brand > img {
-    max-width: 150px;
-    height: auto;
   }
 
   .give-btn {

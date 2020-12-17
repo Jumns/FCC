@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   AOS.init({
-    duration: 800,
+    duration: 700,
     offset: 100,
     once: true,
     easing: "ease-in-out",
