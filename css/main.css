@@ -815,6 +815,11 @@ header .navbar-toggler:focus {
 
 /* Large Mobile :480px. */
 @media screen and (max-width: 520px) {
+  .sm-p {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
   .give-btn {
     top: 200px;
     right: 150px;
